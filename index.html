@@ -7,6 +7,10 @@
     <title>gentepla</title>
     <!-- styles -->
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -19,22 +23,61 @@
                 src="./images/logo_gentepla.svg"
                 alt="logo gentepla"
             /></a>
-            <ul class="header-menu">
+            <ul class="header-menu" id="menu">
               <li><a class="link" href="#about-us">Про нас</a></li>
               <li><a class="link" href="#our-works">Нащі робити</a></li>
-              <li><a class="link" href="#formats">Обладнання</a></li>
+              <li><a class="link" href="#formats">Обладнення</a></li>
               <li><a class="link" href="#contact">Контакти</a></li>
             </ul>
-            <button class="button-primary" type="button">
+            <button
+              class="button-primary"
+              id="menu"
+              type="button"
+              onclick="location.href='#tel'"
+            >
               Зробити дзвінок
             </button>
+            <button type="button" class="header-burger menu-btn-open">
+              <svg width="24" height="24">
+                <use href="./images/symbol.svg#menu"></use>
+              </svg>
+            </button>
           </nav>
+          <div class="mobile-menu">
+            <button
+              class="mobile-menu button-close menu-btn-close"
+              type="button"
+            >
+              <svg width="24" height="24">
+                <use href="./images/symbol.svg#menu"></use>
+              </svg>
+            </button>
+            <ul class="mobile-menu-list" id="menu-mobile">
+              <li>
+                <a class="link" href="#about-us"> Про нас </a>
+              </li>
+              <li>
+                <a class="link" href="#our-works"> Нащі робити </a>
+              </li>
+              <li>
+                <a class="link" href="#formats">Обладнення</a>
+              </li>
+              <li>
+                <a class="link" href="#contact"> Контакти </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
     <main>
       <section class="hero-section">
         <div class="container">
+          <img
+            class="hero-logo"
+            src="./images/logo2-removebg-preview.png"
+            alt=""
+          />
           <h1 class="hero-title"><span class="accent">gen</span> tepla</h1>
         </div>
       </section>
@@ -42,9 +85,9 @@
         <div class="container">
           <h2 class="visually-hidden">Наші переваги</h2>
           <ul class="advantages-list">
-            <li class="advantages-item">15 років опиту</li>
+            <li class="advantages-item">15 років досвіду</li>
             <li class="advantages-item">Доступні за бюджетом формати</li>
-            <li class="advantages-item">Досвічена команда</li>
+            <li class="advantages-item">Досвідчена команда</li>
           </ul>
         </div>
       </section>
@@ -92,13 +135,15 @@
                 <img
                   class="obladnennya-photo"
                   src="./images/obladnennya_1.jpg"
-                  alt="pult-keruvannya"
+                  alt="#"
                 />
                 <div>
                   <h3 class="chef-title">TEXT!!!</h3>
-                  <p class="chef-text">TEXT!!!TE</p>
-                  <p class="chef-text">TEXT!!!TEXT!!!TEXT!!!TEXT!</p>
-                  <p class="chef-text">TEXT!!!TEXT!!!TE</p>
+                  <p class="chef-text">TEXT!!!TEXT!!!TEXT!!</p>
+                  <p class="chef-text">
+                    TEXT!!!TEXT!!!TEXT!!! TEXT!!!TEXT!!!TEXT!!!
+                  </p>
+                  <p class="chef-text">TEXT!!!TEXT!!!TEXT!</p>
                 </div>
               </article>
             </li>
@@ -111,15 +156,79 @@
                 />
                 <div>
                   <h3 class="chef-title">TEXT!!!</h3>
+                  <p class="chef-text">TEXT!!!TEXT!!!TEXT!!</p>
                   <p class="chef-text">
-                    TEXT!!!TEXT!!!TEXT!!!TEXT!!!TEXT!!!TEX
+                    TEXT!!!TEXT!!!TEXT!!! TEXT!!!TEXT!!!TEXT!!!
                   </p>
+                  <p class="chef-text">TEXT!!!TEXT!!!TEXT!</p>
+                </div>
+              </article>
+            </li>
+            <li class="chefs-item">
+              <article class="chef-card">
+                <img
+                  class="obladnennya-photo"
+                  src="./images/obladnennya_3.jpg"
+                  alt="#"
+                />
+                <div>
+                  <h3 class="chef-title">TEXT!!!</h3>
+                  <p class="chef-text">TEXT!!!TEXT!!!TEXT!!</p>
                   <p class="chef-text">
-                    TEXT!!!TEXT!!!TEXT!!!TEXT!!!TEXT!!!TE
-                    TEXT!!!TEXT!!!TEXT!!!TEXT!!!TEXT!!!TE
-                    TEXT!!!TEXT!!!TEXT!!!TEXT!!!TEXT!!!TE
+                    TEXT!!!TEXT!!!TEXT!!! TEXT!!!TEXT!!!TEXT!!!
                   </p>
-                  <p class="chef-text">TEXT!!!TEXT!!!TEXT!!!TEXT!!</p>
+                  <p class="chef-text">TEXT!!!TEXT!!!TEXT!</p>
+                </div>
+              </article>
+            </li>
+            <li class="chefs-item">
+              <article class="chef-card">
+                <img
+                  class="obladnennya-photo"
+                  src="./images/obladnennya_4.jpg"
+                  alt="#"
+                />
+                <div>
+                  <h3 class="chef-title">TEXT!!!</h3>
+                  <p class="chef-text">TEXT!!!TEXT!!!TEXT!!</p>
+                  <p class="chef-text">
+                    TEXT!!!TEXT!!!TEXT!!! TEXT!!!TEXT!!!TEXT!!!
+                  </p>
+                  <p class="chef-text">TEXT!!!TEXT!!!TEXT!</p>
+                </div>
+              </article>
+            </li>
+            <li class="chefs-item">
+              <article class="chef-card">
+                <img
+                  class="obladnennya-photo"
+                  src="./images/obladnennya_5.jpg"
+                  alt="#"
+                />
+                <div>
+                  <h3 class="chef-title">TEXT!!!</h3>
+                  <p class="chef-text">TEXT!!!TEXT!!!TEXT!!</p>
+                  <p class="chef-text">
+                    TEXT!!!TEXT!!!TEXT!!! TEXT!!!TEXT!!!TEXT!!!
+                  </p>
+                  <p class="chef-text">TEXT!!!TEXT!!!TEXT!</p>
+                </div>
+              </article>
+            </li>
+            <li class="chefs-item">
+              <article class="chef-card">
+                <img
+                  class="obladnennya-photo"
+                  src="./images/obladnennya_6.jpg"
+                  alt="#"
+                />
+                <div>
+                  <h3 class="chef-title">TEXT!!!</h3>
+                  <p class="chef-text">TEXT!!!TEXT!!!TEXT!!</p>
+                  <p class="chef-text">
+                    TEXT!!!TEXT!!!TEXT!!! TEXT!!!TEXT!!!TEXT!!!
+                  </p>
+                  <p class="chef-text">TEXT!!!TEXT!!!TEXT!</p>
                 </div>
               </article>
             </li>
@@ -128,48 +237,121 @@
       </section>
       <section class="section" id="formats">
         <div class="container">
-          <h2 class="formats-title section-title centered">Обладнання</h2>
-          <div class="formats-container">
+          <h2 class="formats-title section-title centered">Обладнення</h2>
+          <div class="formats-container container">
             <button class="carousel-button left" type="button">
               <svg width="32" height="32">
                 <use href="./images/symbol.svg#arrow"></use>
               </svg>
             </button>
-            <ul class="formats-list">
-              <li class="formats-item">
-                <article class="format-card">
-                  <h3 class="format-title">ТОВ генератори тепла</h3>
-                  <div class="format-text">
-                    <p>text text text text</p>
-                    <p>text text text text</p>
-                    <p>text text text text</p>
-                    <p>text text text text</p>
-                  </div>
-                </article>
-              </li>
-              <li class="formats-item">
-                <article class="format-card">
-                  <h3 class="format-title">ТОВ генератори тепла</h3>
-                  <div class="format-text">
-                    <p>text text text text</p>
-                    <p>text text text text</p>
-                    <p>text text text text</p>
-                    <p>text text text text</p>
-                  </div>
-                </article>
-              </li>
-              <li class="formats-item">
-                <article class="format-card">
-                  <h3 class="format-title">ТОВ генератори тепла</h3>
-                  <div class="format-text">
-                    <p>text text text text</p>
-                    <p>text text text text</p>
-                    <p>text text text text</p>
-                    <p>text text text text</p>
-                  </div>
-                </article>
-              </li>
-            </ul>
+            <div class="swiper-container container">
+              <ul class="formats-list swiper-wrapper">
+                <li class="swiper-slide">
+                  <article class="format-card">
+                    <img
+                      class="format-images"
+                      src="./images/obladnennya_1.jpg"
+                      alt=""
+                    />
+                    <h3 class="format-title">ТОВ генератори тепла</h3>
+                    <div class="format-text">
+                      <p>text text text text</p>
+                      <p>text text text text</p>
+                      <p>text text text text</p>
+                      <p>text text text text</p>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="format-card">
+                    <img
+                      class="format-images"
+                      src="./images/obladnennya_2.jpg"
+                      alt=""
+                    />
+                    <h3 class="format-title">ТОВ генератори тепла</h3>
+                    <div class="format-text">
+                      <p>text text text text</p>
+                      <p>text text text text</p>
+                      <p>text text text text</p>
+                      <p>text text text text</p>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="format-card">
+                    <img
+                      class="format-images"
+                      src="./images/obladnennya_3.jpg"
+                      alt=""
+                    />
+                    <h3 class="format-title">ТОВ генератори тепла</h3>
+                    <div class="format-text">
+                      <p>text text text text</p>
+                      <p>text text text text</p>
+                      <p>text text text text</p>
+                      <p>text text text text</p>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="format-card">
+                    <img
+                      class="format-images"
+                      src="./images/obladnennya_4.jpg"
+                      alt=""
+                    />
+                    <h3 class="format-title">ТОВ генератори тепла</h3>
+                    <div class="format-text">
+                      <p>text text text text</p>
+                      <p>text text text text</p>
+                      <p>text text text text</p>
+                      <p>text text text text</p>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="format-card">
+                    <img
+                      class="format-images"
+                      src="./images/obladnennya_5.jpg"
+                      alt=""
+                    />
+                    <h3 class="format-title">ТОВ генератори тепла</h3>
+                    <div class="format-text">
+                      <p>text text text text</p>
+                      <p>text text text text</p>
+                      <p>text text text text</p>
+                      <p>text text text text</p>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="format-card">
+                    <img
+                      class="format-images"
+                      src="./images/obladnennya_6.jpg"
+                      alt=""
+                    />
+                    <h3 class="format-title">ТОВ генератори тепла</h3>
+                    <div class="format-text">
+                      <p>text text text text</p>
+                      <p>text text text text</p>
+                      <p>text text text text</p>
+                      <p>text text text text</p>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+              <div class="pagination">
+                <span class="pagination-button active"></span>
+                <span class="pagination-button active"></span>
+                <span class="pagination-button active"></span>
+                <span class="pagination-button active"></span>
+                <span class="pagination-button active"></span>
+                <span class="pagination-button active"></span>
+              </div>
+            </div>
             <button class="carousel-button right" type="button">
               <svg width="32" height="32">
                 <use href="./images/symbol.svg#arrow"></use>
@@ -184,6 +366,11 @@
             <div class="contact-form">
               <h2 class="contact-title section-title">
                 Ми знаходимось за адресою
+                <img
+                  class="contact-photo"
+                  src="./images/doc-teplogenerator.jpg"
+                  alt="logo gentepla"
+                />
               </h2>
             </div>
             <iframe
@@ -210,32 +397,32 @@
                 ><img src="./images/logo_gentepla.svg" alt="logo gentepla" />
               </a>
             </div>
-            <ul class="footer-menu">
+            <ul class="footer-menu" id="menu">
               <li><a class="link" href="#about-us">Про нас</a></li>
               <li><a class="link" href="#our-works">Нащі робити</a></li>
-              <li><a class="link" href="#formats">Обладнання</a></li>
+              <li><a class="link" href="#formats">Обладнення</a></li>
               <li><a class="link" href="#contact">Контакти</a></li>
             </ul>
           </nav>
-          <address class="footer-address">
+          <address class="footer-address" id="tel">
             <ul class="address-list">
               <li>
-                <a class="address-link" href="tel:+380960000007">
+                <a class="address-link" href="tel:+380505332678">
                   +38(050)533-26-78</a
                 >
               </li>
               <li>
-                <a class="address-link" href="tel:+380960000007"
+                <a class="address-link" href="tel:+380987820903"
                   >+38(098)782-09-03
                 </a>
               </li>
               <li>
-                <a class="address-link" href="tel:+380960000007"
+                <a class="address-link" href="tel:+380979125622"
                   >+38(097)912-56-22
                 </a>
               </li>
               <li>
-                <a class="address-link" href="tel:+380960000007"
+                <a class="address-link" href="tel:+380971182904"
                   >+38(097) 118-29-04
                 </a>
               </li>
@@ -278,7 +465,7 @@
               </li>
               <li>
                 <a href="https://www.instagram.com/">
-                  <svg class="media" width="32" height="32">
+                  <svg class="media-insta" width="32" height="32">
                     <use href="./images/symbol.svg#instagram"></use>
                   </svg>
                 </a>
@@ -288,5 +475,11 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./js/formats-slider.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="./js/smooth-scrool.js"></script>
+    <script src="./js/smooth-scrool-mobile.js"></script>
   </body>
 </html>
