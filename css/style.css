@@ -179,7 +179,17 @@ img {
 
 .hero-section {
     padding: 124px 0;
-    background-image: url(../images/fon.jpg);
+    /* background-image: url(../images/fon.jpg); */
+    /* background: linear-gradient(90deg,
+     rgba(94, 226, 105, 0.7343312324929971) 1%,
+     rgba(252, 123, 55, 0.3701855742296919) 70%,
+     rgba(252, 158, 69, 0.5690651260504201) 100%); */
+    background: linear-gradient(90deg, 
+    rgba(94, 226, 105, 0.804359243697479) 13%,
+    rgba(255, 239, 0, 0.41220238095238093) 50%,
+    rgba(252, 158, 69, 0.804359243697479) 90%);
+        transition: transform 0.3s;
+    
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -316,6 +326,20 @@ img {
     @media screen and (min-width: 1280px) {
         background-color: var(--color-brand-dark);
         }
+}
+
+.advantages-icon {
+    fill: #FAF4EA;
+}
+
+.advantages-svg-container {
+    display: flex;
+}
+
+.svg-span {
+    position: relative;
+    top: 3px;
+    right: 3px;
 }
 
 .advantages-list {
@@ -478,9 +502,9 @@ img {
 .obladnennya-photo {
     width: 140px;
     height: 200px;
-    border-radius: 30px;
+    border-radius: 10px;
     padding: 1px;
-    border: solid;
+    /* border: solid; */
     border-width: 2px;
     margin-right: 10px;
 
@@ -705,7 +729,15 @@ img {
 }
 
 .footer {
-    background-image: url(../images/obladnennya_6.jpg);
+    /* background-image: url(../images/obladnennya_6.jpg); */
+    /* background: linear-gradient(90deg,
+                rgba(94, 226, 105, 0.7343312324929971) 1%,
+                rgba(252, 123, 55, 0.3701855742296919) 70%,
+                rgba(252, 158, 69, 0.5690651260504201) 100%); */
+    background: linear-gradient(90deg,
+     rgba(94, 226, 105, 0.804359243697479) 13%,
+     rgba(255, 239, 0, 0.41220238095238093) 50%,
+     rgba(252, 158, 69, 0.804359243697479) 90%);
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
