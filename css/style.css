@@ -179,23 +179,27 @@ img {
 
 .hero-section {
     padding: 124px 0;
-    /* background-image: url(../images/fon.jpg); */
+        background-image: url(../images/fon2.jpg);
     /* background: linear-gradient(90deg,
-     rgba(94, 226, 105, 0.7343312324929971) 1%,
-     rgba(252, 123, 55, 0.3701855742296919) 70%,
-     rgba(252, 158, 69, 0.5690651260504201) 100%); */
-    background: linear-gradient(90deg, 
+    rgba(94, 226, 105, 0.7343312324929971) 1%,
+    rgba(252, 123, 55, 0.3701855742296919) 70%,
+    rgba(252, 158, 69, 0.5690651260504201) 100%); */
+    /* background: linear-gradient(90deg, 
     rgba(94, 226, 105, 0.804359243697479) 13%,
     rgba(255, 239, 0, 0.41220238095238093) 50%,
-    rgba(252, 158, 69, 0.804359243697479) 90%);
-        transition: transform 0.3s;
+    rgba(252, 158, 69, 0.804359243697479) 90%); */
+    transition: transform 0.3s;
     
     background-repeat: no-repeat;
-    background-position: center;
+    background-position-x: 0;
+    background-position-y: 0;
     background-size: cover;
     background-attachment: fixed;
 
     @media screen and (min-width: 1280px) {
+    background-position-y: -200px;
+        background-image: url(../images/title.jpg);
+        
     padding:272px 0;
     }
 }
@@ -203,7 +207,8 @@ img {
 .hero-logo {      
         @media screen and (min-width: 1280px) {
                 position: absolute;
-                    top: 100px;
+                    /* top: 10px; */
+                    top: 270px;
                     margin-left: 350px;
                     transform: scale(1.5);
             }
@@ -468,7 +473,7 @@ img {
 .chef-text {
                 font-size: 10px;
     @media screen and (min-width: 768px) {
-            font-size: 24px;
+            font-size: 14px;
         }
 }
 
@@ -500,24 +505,27 @@ img {
 }
 
 .obladnennya-photo {
+
     width: 140px;
     height: 200px;
+    min-width: 140px;
+    min-height: 200px;
     border-radius: 10px;
     padding: 1px;
-    /* border: solid; */
-    border-width: 2px;
     margin-right: 10px;
-
+    
     @media screen and (min-width: 768px) {
+        /* flex-basis: calc((100% - 30px) / 2); */
             width: 230px;
             height: 300px;
-            flex-basis: calc((100% - 30px) / 2);
+            min-width: 230px;
+                min-height: 300px;
         }
 }
 
 .chef-title {
     margin-bottom: 16px;
-    font-size: 40px;
+    font-size: 20px;
     font-weight: 600;
 }
 
@@ -545,15 +553,15 @@ img {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    height: 444px;
-    padding: 24px;
+    justify-content: flex-start;
+    height: 585px;
+    padding: 14px;
     border: 1px solid lightgrey;
     border-radius: 16px;
     border-radius: 16px;
     background: linear-gradient(
-        180deg, rgba(49, 38, 26, 0.00) 55.21%, 
-        rgba(49, 38, 26, 0.71) 72.92%, 
+        180deg, rgba(49, 38, 26, 0.00) 0.21%, 
+        rgba(49, 38, 26, 0.71) 50.92%, 
         #31261A 100%);
         transition: transform 0.3s;
 }
@@ -571,7 +579,6 @@ img {
 
 .format-card:hover {
     @media screen and (min-width: 768px) {
-        transform: scale(1.2);
         }
 }
 
@@ -586,8 +593,9 @@ img {
 }
 
 .format-text {
-    font-size: 14px;
-    font-weight: 300;
+    
+    font-size: 12px;
+    font-weight: 600;
     color: var(--color-primary-light);
 }
 
