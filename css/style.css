@@ -180,6 +180,7 @@ img {
 .hero-section {
     padding: 124px 0;
         background-image: url(../images/fon2.jpg);
+        filter: grayscale(60%);
     /* background: linear-gradient(90deg,
     rgba(94, 226, 105, 0.7343312324929971) 1%,
     rgba(252, 123, 55, 0.3701855742296919) 70%,
@@ -197,7 +198,7 @@ img {
     background-attachment: fixed;
 
     @media screen and (min-width: 1280px) {
-    background-position-y: -200px;
+    background-position-y: -130px;
         background-image: url(../images/title.jpg);
         
     padding:272px 0;
