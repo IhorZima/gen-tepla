@@ -180,7 +180,7 @@ img {
 .hero-section {
     padding: 124px 0;
         background-image: url(../images/fon2.jpg);
-        filter: grayscale(60%);
+        filter: grayscale(70%);
     /* background: linear-gradient(90deg,
     rgba(94, 226, 105, 0.7343312324929971) 1%,
     rgba(252, 123, 55, 0.3701855742296919) 70%,
@@ -189,18 +189,15 @@ img {
     rgba(94, 226, 105, 0.804359243697479) 13%,
     rgba(255, 239, 0, 0.41220238095238093) 50%,
     rgba(252, 158, 69, 0.804359243697479) 90%); */
-    transition: transform 0.3s;
     
+    transition: transform 0.3s;
     background-repeat: no-repeat;
-    background-position-x: 0;
-    background-position-y: 0;
     background-size: cover;
     background-attachment: fixed;
+    background-position-y: -10px;
 
     @media screen and (min-width: 1280px) {
-    background-position-y: -130px;
         background-image: url(../images/title.jpg);
-        
     padding:272px 0;
     }
 }
@@ -209,7 +206,7 @@ img {
         @media screen and (min-width: 1280px) {
                 position: absolute;
                     /* top: 10px; */
-                    top: 180px;
+                    top: 210px;
                     margin-left: 350px;
                     transform: scale(1.5);
             }
