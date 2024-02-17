@@ -205,7 +205,6 @@ img {
 .hero-logo {      
         @media screen and (min-width: 1280px) {
                 position: absolute;
-                
                     /* top: 10px; */
                     top: 210px;
                     margin-left: 350px;
