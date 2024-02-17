@@ -17,11 +17,11 @@
 <defs>
 <linearGradient id="paint0_linear_49_96" x1="49.999" y1="0.687965" x2="49.999" y2="139.688" gradientUnits="userSpaceOnUse">
 <stop stop-color="#FFBA00"/>
-<stop offset="1" stop-color="#FFC700" stop-opacity="0.15"/>
+<stop offset="1" stop-color="#FFC700" stop-opacity="1"/>
 </linearGradient>
 <linearGradient id="paint1_linear_49_96" x1="49.999" y1="0.687965" x2="49.999" y2="139.688" gradientUnits="userSpaceOnUse">
 <stop stop-color="#FFBA00"/>
-<stop offset="1" stop-color="#FFC700" stop-opacity="0.15"/>
+<stop offset="1" stop-color="#FFC700" stop-opacity="1"/>
 </linearGradient>
 </defs>
 </svg>
