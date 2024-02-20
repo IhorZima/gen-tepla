@@ -446,6 +446,12 @@ img {
 
 /* our-work-title */
 
+.our_works_section {
+    @media screen and (min-width: 768px) {
+        margin-left: 200px;
+        }
+}
+
 .our-works-title {
     max-width: 520px;
     margin: 0 auto 80px;
@@ -470,7 +476,7 @@ img {
 }
 
 .chef-text {
-                font-size: 10px;
+                font-size: 14px;
     @media screen and (min-width: 768px) {
             font-size: 14px;
         }
@@ -505,8 +511,8 @@ img {
 
 .obladnennya-photo {
 
-    width: 140px;
-    height: 200px;
+    width: 340px;
+    height: 380px;
     min-width: 140px;
     min-height: 200px;
     border-radius: 10px;
